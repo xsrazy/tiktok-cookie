@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Tiktok Cookie",
+  "version": "1.0.0",
+  "description": "Export cookie TikTok. Hanya baca cookie tiktok.com, hanya saat kamu klik export.",
+  "permissions": ["cookies", "activeTab", "downloads"],
+  "host_permissions": ["*://*.tiktok.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tiktok Cookie"
+  }
+}

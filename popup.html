@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<style>
+  body { width: 320px; font-family: system-ui, sans-serif; margin: 0; padding: 14px; background: #0b0c0f; color: #f2f3f5; }
+  h1 { font-size: 15px; margin: 0 0 4px; }
+  p { font-size: 12px; color: #b6bcc9; margin: 0 0 12px; line-height: 1.5; }
+  label { font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; }
+  input { width: 100%; box-sizing: border-box; padding: 8px; border-radius: 8px; border: 1px solid #262a33; background: #16181d; color: #f2f3f5; font-size: 13px; margin-bottom: 10px; }
+  button { width: 100%; padding: 10px; border: none; border-radius: 8px; background: #fe2c55; color: #fff; font-weight: 700; font-size: 13px; cursor: pointer; margin-bottom: 8px; }
+  button.secondary { background: #1e2129; color: #f2f3f5; }
+  #status { font-size: 12px; color: #4ade80; min-height: 16px; }
+  #cookiePreview { font-size: 11px; color: #7d8494; word-break: break-all; max-height: 60px; overflow: hidden; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <h1>Tiktok Cookie</h1>
+  <p>Ambil cookie akun TikTok yang sedang login di tab ini. Ekstensi ini hanya baca cookie tiktok.com dan hanya jalan saat kamu klik tombol.</p>
+  <label for="handle">Handle akun (contoh: @akun1)</label>
+  <input id="handle" type="text" placeholder="@username" />
+  <button id="exportBtn" type="button">Download CSV (1 baris)</button>
+  <button id="copyBtn" type="button" class="secondary">Salin Cookie Saja</button>
+  <div id="status"></div>
+  <div id="cookiePreview"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
